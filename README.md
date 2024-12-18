@@ -26,11 +26,7 @@ A simple and customizable video downloader built with Python using [yt-dlp](http
    ```bash
    git clone https://github.com/your-username/yt-dlp-based-video-downloader.git
    cd yt-dlp-based-video-downloader
-Install dependencies:
 
-bash
-Kodu kopyala
-pip install -r requirements.txt
 Install FFmpeg:
 
 Download FFmpeg from https://ffmpeg.org/download.html.
