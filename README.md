@@ -12,13 +12,14 @@ A simple and customizable video downloader built with Python using [yt-dlp](http
 - **Customizable Download Path**:
   - Set a default download folder and change it whenever needed.
 - **User-Friendly Interface**:
-  - Intuitive GUI built with `tkinter`.
+  - Intuitive GUI built with `CustomTkinter`.
 
 ## Requirements
 
 - Python 3.7+
 - yt-dlp
 - ffmpeg (required for audio extraction)
+- CustomTkinter
 
 ## Installation
 
