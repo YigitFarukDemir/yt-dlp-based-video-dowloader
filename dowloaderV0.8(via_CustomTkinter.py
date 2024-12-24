@@ -70,12 +70,24 @@ def download_video():
         video_title, available_subtitles = get_video_info(url)
         status_label.configure(text=f"Video Başlığı: {video_title}")
 
+
         resolution = resolution_var.get()
         ydl_opts = {
             'format': f'bestvideo[height<={resolution}]+bestaudio/best',
             'outtmpl': os.path.join(default_download_path, '%(title)s.%(ext)s'),
             'progress_hooks': [on_progress],
         }
+        selected_option = option_var.get()
+        if selected_option == "Video (Seçilen Çözünürlük)":
+            resolution = resolution_var.get()
+            ydl_opts['format'] = f'bestvideo[height<={resolution}]+bestaudio/best'
+        elif selected_option == "Ses (MP3)":
+            ydl_opts['format'] = 'bestaudio/best'
+            ydl_opts['postprocessors'] = [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192',
+            }]
 
         # Altyazı indirme seçeneğini ekle
         if subtitle_option_var.get() and available_subtitles:
