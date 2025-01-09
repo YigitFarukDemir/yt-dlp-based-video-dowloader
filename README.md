@@ -45,3 +45,8 @@ Audio: Download only the audio in MP3 format.
 Select or confirm your default download folder.
 
 Click Download and watch the progress bar for updates!
+
+## License
+This project is built in compliance with the GPLv3 license of the yt-dlp library. For more details, see the [LICENSE file](./LICENSE).
+The creator of this software is not responsible for any misuse of the application. Users are solely responsible for ensuring compliance with copyright laws and platform terms of service.
+This software is intended for personal and lawful use only. Users are responsible for ensuring their use complies with all applicable laws and platform terms of service.
